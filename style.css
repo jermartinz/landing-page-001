@@ -15,6 +15,7 @@ body,.footer{
 .quote-text{
     font-size: 36px;
     font-style: italic;
+    margin: 0 42px 0 42px;
 }
 
 #header-logo-text{
@@ -31,11 +32,6 @@ body,.footer{
     font-size: 48px;
     color: #f9faf8;
 }
-.info-title{
-    font-weight: bolder;
-    font-size: 36px;
-    color: #1F2937;
-}
 .secondary-text,
 #header-logo-text,
 .main-text,
@@ -48,10 +44,6 @@ body,.footer{
     color: black    ;
 }
 
-
-.end-page-body{
-    background-color: white;
-}
 .rectangule, .button{
     background-color: #3882f6;
 }
@@ -63,6 +55,8 @@ a{
     color: #ffffff;
 }
 body{
+    margin: 0;
+    max-height: 1000vh;
     display: flex;
     flex-direction: column;
     font-family: 'Fira Sans', sans-serif;
@@ -87,7 +81,7 @@ body{
 }
 .title-content{
     display: flex;
-    margin: 82px 82px;
+    margin: 82px 100px;
     flex-direction: column;
     text-align: left;
     width: 82vw;
@@ -152,15 +146,74 @@ body{
     align-items: center;
     flex-direction: column;
     text-align: center;
+    height: 460px;
 }
+
 #author-quote{
     font-weight: bold;
 
 }
 .author{
+    display: flex;
+    width: 86vw;
+    justify-content: flex-end;
     text-align: end;
 }
 .button{
-    padding: 8px;
-    border-radius: 4px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 2px;
+}
+.end-page-body{
+    background-color: white;
+    height: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.rectangule {
+    display: flex;
+    flex-direction: row;
+    height: 160px;
+    width: 1060px;
+    border-radius: 6px;
+    padding: 0 42px 0 42px;
+    
+}
+.info-title{
+    margin: 6px;
+    font-weight: bolder;
+    font-size: 36px;
+    color: white;
+    
+}
+.secondary-text-rectangule{
+    margin: 6px;
+    color: #ffffff;
+}
+.first-rectangule-layer{
+    width: 52vw;
+    margin: 24px;
+    display: flex;
+   justify-content: center;
+    flex-direction: column;
+}
+.second-rectangule-layer{
+    width: 16vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-borderer{
+    background-color: #3882f6;
+    outline: 2px solid #e5e7eb;
+    padding: 8px 16px 8px 16px;
+    border-radius: 2px;
+}
+
+.footer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
